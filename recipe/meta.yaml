@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3tuning_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3tuning/mlr3tuning_{{ version }}.tar.gz
-  sha256: d564b33fcee2c6367da26f7d416d5b017a13598eea61a3df8e57c8df2506c8de
+  sha256: a7f23066e7998a952eef1d5442fc0184a422b8083f56f785cc9e5b19284fae4f
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -53,13 +53,10 @@ test:
 about:
   home: https://mlr3tuning.mlr-org.com, https://github.com/mlr-org/mlr3tuning
   license: LGPL-3.0-only
-  summary: Implements methods for hyperparameter tuning with 'mlr3', e.g. Grid Search, Random
-    Search, or Simulated Annealing. Various termination criteria can be set and combined.  The
-    class 'AutoTuner' provides a convenient way to perform nested resampling in combination
-    with 'mlr3'.
+  summary: Implements methods for hyperparameter tuning with 'mlr3', e.g. Grid Search, Random Search, or Simulated Annealing. Various termination criteria can be set and combined.  The class 'AutoTuner' provides a convenient way to perform nested resampling in combination with 'mlr3'.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
