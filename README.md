@@ -1,11 +1,11 @@
-About r-mlr3tuning
-==================
+About r-mlr3tuning-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3tuning-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3tuning.mlr-org.com, https://github.com/mlr-org/mlr3tuning
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3tuning-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements methods for hyperparameter tuning with 'mlr3', e.g. Grid Search, Random Search, or Simulated Annealing. Various termination criteria can be set and combined.  The class 'AutoTuner' provides a convenient way to perform nested resampling in combination with 'mlr3'.
 
