@@ -1,4 +1,4 @@
-{% set version = "0.20.0" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3tuning_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3tuning/mlr3tuning_{{ version }}.tar.gz
-  sha256: 23be363aabfeb4db3ebf994b78e29710526638143e054396a360a7deb0c32cf8
+  sha256: 86fdb59397b65288186cde667cf98dcf53868adf1def41d65e4e34db3cffac52
 
 build:
   merge_build_host: true  # [win]
